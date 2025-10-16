@@ -9,9 +9,7 @@ CREATE TABLE usuario (
 CREATE TABLE categoria (
     id_categoria SERIAL PRIMARY KEY,
     nome VARCHAR(50) NOT NULL,
-    descricao VARCHAR(150),
-    id_usuario INT NOT NULL,
-    FOREIGN KEY (id_usuario) REFERENCES usuario (id_usuario) ON DELETE CASCADE
+    descricao VARCHAR(150)
 );
 
 CREATE TABLE tarefa (
