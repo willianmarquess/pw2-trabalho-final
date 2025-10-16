@@ -8,7 +8,7 @@ CREATE TABLE usuario (
 
 CREATE TABLE categoria (
     id_categoria SERIAL PRIMARY KEY,
-    nome VARCHAR(50) NOT NULL,
+    nome VARCHAR(50) NOT NULL UNIQUE,
     descricao VARCHAR(150)
 );
 
